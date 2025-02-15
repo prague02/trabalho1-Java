@@ -1,0 +1,25 @@
+package trabalho1;
+
+import java.util.Scanner;
+
+public class senha {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		String senhaCorreta = "Java123";
+        String senha;
+        do {
+            System.out.print("Digite a senha: ");
+            senha = scanner.next();
+            if (!senha.equals(senhaCorreta)) {
+                System.out.println("Senha incorreta, tente novamente.");
+            }
+        } while (!senha.equals(senhaCorreta));
+        System.out.println("Acesso permitido!");
+        
+        scanner.close();
+    	}
+
+	}
+
