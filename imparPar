@@ -1,0 +1,16 @@
+package trabalho1;
+
+import java.util.Scanner;
+
+public class imparPar {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.print("Digite um número inteiro: ");
+        int numParImpar = scanner.nextInt();
+        System.out.println(numParImpar % 2 == 0 ? "Número par" : "Número ímpar");
+
+	}
+
+}
