@@ -1,0 +1,23 @@
+package trabalho1;
+
+import java.util.Scanner;
+
+public class calculoArea {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		// TODO Auto-generated method stub
+		System.out.println("Escolha uma opção:\n1. Calcular área do quadrado\n2. Calcular área do círculo");
+        int escolha = scanner.nextInt();
+        if (escolha == 1) {
+            System.out.print("Digite o lado do quadrado: ");
+            double lado = scanner.nextDouble();
+            System.out.println("Área do quadrado: " + (lado * lado));
+        } else if (escolha == 2) {
+            System.out.print("Digite o raio do círculo: ");
+            double raio = scanner.nextDouble();
+            System.out.println("Área do círculo: " + (Math.PI * raio * raio));
+        }
+	}
+
+}
