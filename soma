@@ -1,0 +1,22 @@
+package trabalho1;
+
+import java.util.Scanner;
+
+public class soma {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		 System.out.print("Digite um número para somar os primeiros ímpares: ");
+	        int n = scanner.nextInt();
+	        int soma = 0, contador = 0, numeroAtual = 1;
+	        while (contador < n) {
+	            soma += numeroAtual;
+	            numeroAtual += 2;
+	            contador++;
+	        }
+	        System.out.println("Soma dos primeiros " + n + " números ímpares: " + soma);
+
+	}
+
+}
