@@ -1,0 +1,20 @@
+package trabalho1;
+
+import java.util.Scanner;
+
+public class fatorial {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.print("Digite um número para calcular o fatorial: ");
+        int numFatorial = scanner.nextInt();
+        long fatorial = 1;
+        for (int i = 1; i <= numFatorial; i++) {
+            fatorial *= i;
+        }
+        System.out.println("Fatorial: " + fatorial);        
+
+	}
+
+}
